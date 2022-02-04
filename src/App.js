@@ -1,22 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { Text, Spacer, Button, Link,Checkbox  } from '@nextui-org/react';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
+        <Text>NextUI example with create-react-app</Text>
+        <Link
+          color
+          href="https://nextui.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
-        </a>
+          Show NextUI React
+        </Link>
+        <Spacer />
+        <Button>Action</Button>
+        <Checkbox checked={true} size="xl">
+            xlarge
+        </Checkbox>
       </header>
     </div>
   );
